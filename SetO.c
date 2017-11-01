@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<string.h>
 #include<math.h>
-#include<conio.h>
 typedef struct Node{
 	int number;
 	struct Node *right_ptr;
