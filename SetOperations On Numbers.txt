@@ -1,0 +1,62 @@
+Set Operations On Numbers
+DS group Project
+52 Anurag Mishra 
+53 Aman Saxena
+54 Rishit Ratna
+55 Vyshnav Ayilliath
+56 Anmol Nanchahal
+
+Problem Statement:
+
+Write a C application to implement a complete library for Set Operations on numbers. The library must provide options for creating sets, you are free to use any data structure. Perform the following Operations:
+i) Union of Sets							v) Compute Power Set
+ii) Intersection							vi) Set Difference
+iii) Set Membership						vii) Set Inclusion
+iv) Complement 							viii) Cartesian Product 
+
+Data Structure Employed :
+
+Doubly Linked List without header node and not circularly linked.
+typedef struct Node{
+int number;
+	struct Node *right_ptr;
+	struct Node *left_ptr;
+}Node;
+
+
+
+Algorithm
+i) Union Of Sets:
+Step 1: Join Both the linked list 
+Step 2: Delete every Duplicate element
+ii) Intersection Of Sets 
+Step 1: For each element in the first linked list, iterate through the 2nd list.                                                                                 
+	Step 2:  Repeat until end of list 1.
+
+
+	Step 3: If a same element is found, add that to a new list
+ iii) Set Membership 
+	Step 1: Ask user for an element to compare
+	Step 2: Iterate through list and Check if it is present in list 1.
+	Step 3: Do the same for list 2.
+iv) Compliment
+	Step 1: Take list 1 as the Universal Set.
+	Step 2: Display all elements present in list one but not in Universal Set
+
+v) Power Set
+Step 1: Find the number of elements(n) in the given List
+Step 2: Run a for loop for 0 to  n-1 
+Step 3: For each iteration a different Sequence of binary codes will be     ………..generated which selects whether an element is there in that set or ………..not.
+Step 4: Display each of combination.
+vi) Set Difference
+	Step 1: Assume list 1 - list 2 
+ 
+
+	Step 2: For every element in list 2 run a loop
+	Step 3: Check if the Corresponding number is present in list 1 and delete it.
+vii) Set Inclusion:
+	Step 1: Check if every element of list 2 is present in list 1
+	Step 2: If condition is satisfied, then list 2 is a subset of list 1.
+viii) Cartesian Product:
+Step 1: For an element is list 1, make a pair with every element of list 2
+Step 2: Do this for every element in list 1. 
